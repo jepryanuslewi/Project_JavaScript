@@ -1,0 +1,133 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    background-color: #cecaca;
+    height: 100%;
+    height: 90vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px  20px  rgba(230, 20, 20, 0.968);
+}
+
+.quoted{
+    background-color: rgb(17, 1, 1);
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.968);
+}
+
+#text-quoted{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#author{
+    color: whitesmoke;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#button{
+    padding: 10px;
+    border: none;
+    background-color: rgb(206, 22, 22);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: wheat;
+}
+
+#button:hover{
+    color: whitesmoke;
+    background-color: rgb(149, 20, 20);
+}
+
+@media (max-width: 600px) {
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    background-color: #cecaca;
+    height: 100%;
+    height: 90vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 10px  20px  rgba(230, 20, 20, 0.968);
+}
+
+.quoted{
+    background-color: rgb(17, 1, 1);
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.968);
+}
+
+#text-quoted{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#author{
+    color: whitesmoke;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#button{
+    padding: 10px;
+    border: none;
+    background-color: rgb(206, 22, 22);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: wheat;
+}
+
+#button:hover{
+    color: whitesmoke;
+    background-color: rgb(149, 20, 20);
+}
+}

@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Trebuchet MS', sans-serif;
+    background-color: #14696c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container{
+    background-color: rgb(9, 75, 75);
+    width: 450px;
+    height: 400px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 40px aqua;
+}
+
+h1{
+    color: aqua;
+}
+.p1{
+    color: rgb(250, 52, 38);
+    font-weight: 400;
+    font-size: larger;
+}
+
+#guessInput{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    width: 40%;
+    box-shadow: 0 4px 22px rgb(6, 110, 75);
+    border: 2px solid aqua;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(10, 91, 91);
+    border-radius: 5px;
+    box-shadow: 0 4px 22px aquamarine;
+    cursor: pointer;
+}
+
+p{
+    color: greenyellow;
+}

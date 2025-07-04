@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    background-color: #e4dada;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(0, 0, 0,0.2);
+    border-radius: 15px;
+}
+
+header{
+    text-align: center;
+}
+
+header h1{
+    font-size: 2em;
+}
+
+header h2{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.carousel-container{
+    position: relative;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+
+.carousel-slider{
+    display: flex;
+    width: 1000px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slider img{
+    width: 1000px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.prev-btn, .next-btn{
+    background-color: rgba(213, 213, 213, 0.8);
+    border: none;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+}
+
+.prev-btn{
+    left: 30px;
+}
+
+.next-btn{
+    right: 30px;
+}
+
+.prev-btn:hover, .next-btn:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.carousel-indicators{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    bottom: 20px;
+    gap: 20px;
+    z-index: 1;
+}
+
+.indicator{
+    border-radius:50%;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(225, 225, 225, 0.5);
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.indicator.active{
+    background-color: rgba(4, 86, 44, 0.9);
+}
+
+.indicator:hover{
+    background-color: rgba(4, 86, 44, 0.9);
+}

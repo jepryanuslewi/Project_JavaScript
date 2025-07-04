@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d8d8d8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 50px ;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.505);
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+h1{
+    color: aquamarine;
+}
+
+#colorSelected{
+    background-color: black;
+    margin: 10px;
+    height: 200px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
