@@ -1,0 +1,70 @@
+body, p,h1{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: 36px;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(3, 75, 75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.accordion-container{
+    background-color: transparent;
+    width: 100%;
+    max-width: 600px;
+}
+
+.accordion-item{
+    background-color: #d4d4d4;
+    border-bottom: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.accordion-header{
+    background-color: #1352b8;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.accordion-header:hover{
+    background-color: #2a75ee;
+}
+
+.accordion-header.active + .accordion-content-text{
+    display: block;
+    
+}
+
+.accordion-content{
+    overflow: hidden;
+    padding: 0 15px;
+    max-height: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content p{
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
