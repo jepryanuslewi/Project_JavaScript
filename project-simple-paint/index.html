@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Simple Pain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pain-app">
+        <!-- toolbar for painting tools -->
+         <div class="toolbar">
+            <button class="tool active" id="brush">Brush</button>
+            <button class="tool" id="eraser">Eraser</button>
+            <input type="color" value="#000000" id="colorPicker">
+            <button class="tool" id="clear">Clear</button>
+            <h2>Line Width: </h2>
+            <input type="number" id="lineWidth" max="20" min="1" value="1">
+         </div>
+         <!-- Canvas Area -->
+         <canvas id="canvas"></canvas>
+
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
