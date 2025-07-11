@@ -1,0 +1,196 @@
+body{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://wallpapers.com/images/file/black-shiny-background-463vgujxi8blnje0.jpg');
+}
+
+h1{
+    font-weight: bold;
+    color: #14ff24;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container{
+    background-color: #d0d0d03e;
+    padding: 10px 50px 10px 50px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0 ,0 , 0.5);
+}
+
+#new-task{
+    width: 80%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-bottom: 20px;
+    background-color: #7e7d7d5f;
+    color: #14ff24;
+    font-size: 20px;
+}
+
+#new-task::placeholder{
+    color: #14ff24;
+}
+
+#add-btn{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(18, 219, 18);
+    font-weight: bold;
+    color: whitesmoke;
+    transition: background-color 0.3s ease;
+}
+
+#add-btn:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+#todo-list{
+    list-style: none;
+    padding: 20px;
+    overflow-y: auto;
+    height: 200px;
+    background-color: #84848470;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0 ,0 , 0.2);
+}
+
+#todo-list::-webkit-scrollbar{
+    width: 10px;
+}
+#todo-list::-webkit-scrollbar-track{
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+#todo-list::-webkit-scrollbar-thumb{
+    background-color: #e80b0b;
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: greenyellow;
+    margin-bottom: 10px;
+    background-color: #1b1c2076;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0 ,0 , 0.5);
+}
+
+li span{
+    flex: 1;
+    font-size: 16px;
+}
+
+.buttons{
+    display: flex;
+    gap: 5px;
+}
+
+button{
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.edit-btn{
+    background-color: #007bff;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.edit-btn:hover{
+    background: #196dc6;
+}
+
+.delate-btn{
+    background-color: red;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.delate-btn:hover{
+    background: rgb(203, 32, 32);
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://wallpapers.com/images/file/black-shiny-background-463vgujxi8blnje0.jpg');
+    transition: display 0.3s ease;
+}
+
+.modal-content{
+    background: rgba(184, 183, 183, 0.307);
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(47, 255, 61);
+}
+
+.modal input{
+    width: 80%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0 ,0 , 0.2);
+    margin-bottom: 20px;
+    font-size: 18px;
+    background-color: #ccc;
+}
+
+#save-modal{
+    padding: 8px;
+    width: 80px;
+    background-color: #23a32b;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 100px;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+}
+
+#save-modal:hover{
+    background: #14ff24;
+}
+
+#cancel-modal{
+    padding: 8px;
+    width: 80px;
+    background-color: grey;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+#cancel-modal:hover{
+    background: rgb(170, 170, 170);
+}
