@@ -1,0 +1,204 @@
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(162, 162, 162);
+    box-sizing: border-box;
+    background-image: url('https://wallpapers.com/images/file/black-shiny-background-463vgujxi8blnje0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    background-color: teal;
+}
+header h1{
+    color: aliceblue;
+}
+#cart-icon{
+    font-size: 1.8em;
+    color: rgba(240, 248, 255, 0.933);
+    cursor: pointer;
+}
+
+#produk-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    column-gap: 100px;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.list-produk{
+    overflow: hidden;
+    max-width: 100%;
+    width: 250px;
+    background-color: rgba(245, 245, 245, 0.736);
+    margin: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-produk div{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+button{
+    border: none;
+    background: rgb(8, 175, 175);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.429);
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: background 0.2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background: rgb(2, 233, 233);
+    color: rgb(31, 30, 30);
+}
+
+.list-produk span{
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.list-produk img{
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#modal-view-detail{
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.374);
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+.modal-view-content img{
+    width: 200px;
+    margin-left: 50px;
+}
+.modal-view-content{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 5px 20px teal;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+#detail-produk{
+    max-width: 100px;
+}
+
+#modal-cart-count{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.53);
+}
+
+.modal-cart-content{
+    border-radius: 10px;
+    overflow-y: auto;
+    background-color: teal;
+    padding: 15px;
+    height: 200px;
+    width: 500px;
+    text-align: start;
+    color: whitesmoke;
+    font-size: 20px;
+    box-shadow: 0 4px 10px teal;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-cart{
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    background-color: rgb(66, 157, 157);
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+
+.modal-cart img{
+    width: 50px;
+}
+
+section{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.total-price{
+    padding-left: 270px;
+    font-weight: bold;
+    color: greenyellow;
+}
+
+.delete-btn{
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    background: red;
+    transition: background 0.3s ease;
+}
+.delete-btn:hover{
+    background: rgb(204, 0, 0);
+}
+
+.modal-cart-content::-webkit-scrollbar{
+    width: 12px;
+}
+.modal-cart-content::-webkit-scrollbar-track{
+    background-color: teal;
+    border-radius: 200px;
+}
+.modal-cart-content::-webkit-scrollbar-thumb{
+    background-color: #09737e;
+    border-radius: 10px;
+    border: 2px solid #f0f0f070;
+}
