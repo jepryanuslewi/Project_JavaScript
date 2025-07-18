@@ -1,4 +1,4 @@
-const apiKey = '3b8b95281214463d9f48e15161d5b17e';
+const apiKey = '';
 
 // ambil dom element
 const loc = document.getElementById('location');
